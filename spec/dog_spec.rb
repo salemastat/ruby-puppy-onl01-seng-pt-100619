@@ -18,11 +18,7 @@ describe "Dog" do
 
   describe "class variables" do
     describe "@@all" do
-      it "has a class variable, @@all, the points to an ar
-      expect(pluto.name).to eq("Pluto")
-    end
-  end
-endray" do
+      it "has a class variable, @@all, the points to an array" do
         expect(Dog.class_variable_get(:@@all)).to be_a(Array)
       end
     end
@@ -45,7 +41,7 @@ endray" do
     describe ".print_all" do
       it "is a class method that puts out the name of each dog to the terminal" do
         expect{Dog.print_all}.to output("Pluto\nFido\nMaddy\n").to_stdout
-       end
+      end
     end
   end
   
@@ -67,3 +63,7 @@ endray" do
 
   describe "#name" do
     it "has a name" do
+      expect(pluto.name).to eq("Pluto")
+    end
+  end
+end

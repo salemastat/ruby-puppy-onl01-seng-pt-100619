@@ -1,3 +1,4 @@
+
 class Dog
   attr_accessor :name
 
@@ -9,14 +10,14 @@ class Dog
   end
   
   def self.all
-     @@all
+    @@all
   end
   
   def self.clear_all
-    @@all.clear
+   @@all.clear
   end
   
-  def self.print_all
-      @@all.print 
-  end
+ def self.print_all
+   @@all
+ end
 end   
